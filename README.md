@@ -24,8 +24,8 @@ I have got a small problem which involves dates and I wanted to extract day from
 
 ## Contributors
 
-Contact me on email if you some ideas to extend. 
+Contact me on email if you have more ideas to extend. 
 
 ## License
 
-GPLV3.0 check the license file 
+GPLV3.0  :  check the license file 
