@@ -15,7 +15,7 @@ var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday','sa
 function extract_date_month_year(date) {
 	var date = date.toString();
 	list = date.split("/");
-	if (list.length != 3) {
+	if (list.length != 3) {	
 		return false;
 	}
 	return list;	
@@ -27,7 +27,6 @@ function extract_date_month_year(date) {
  */
 function date2day(date_passed) {
 	var date = date_passed;
-	console.log("Date passed = " + date);
 	var list_of_dmy = extract_date_month_year(date);
 	
 	if (list_of_dmy == false) {
@@ -37,14 +36,10 @@ function date2day(date_passed) {
 	var y = parseInt(list[2]);
 	var d = parseInt(list[0]);
 	var m = parseInt(list[1]);
-	console.log("date " + d + " month "+ m + " year "+ y);
 	var t = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4];
 	if (m < 3) {
 		y = y-1;
 	}
-	console.log((y + y/4 - y/100 + y/400 + t[m-1] + d));
-	var day =  (y + y/4 - y/100 + y/400 + t[m-1] + d) % 7;
-	console.log("day = " + day);
-	console.log(days[day]);
+	var day =  (y + Math.floor(y/4) - Math.floor(y/100) + Math.floor(y/400) + t[m-1] + d) % 7;
 	return days[day];
 }
