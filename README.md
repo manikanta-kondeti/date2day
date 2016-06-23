@@ -6,13 +6,13 @@
 The name specifies what it does. Given a date it will convert it into a day
 
 ## HOW TO USE
- *Include this line in your script  
- * 		<script type="text/javascript" src="https://github.com/manikanta-kondeti/date2day/date2day.js"></script>
+
+ *       Include this line in your script  : 		 <script type="text/javascript" src="https://github.com/manikanta-kondeti/date2day/date2day.js"></script>
  *         Usage : 
  *        var day = date2day("23/6/2016");  // input must be a string : <day/month/year> 
  *        console.log(day); // Output must be a string ('thursday') or ('not a valid date').
 
-## Code Example
+## REFERENCE
 
 Reference: http://www.cprogramming.com/tutorial/modulus.html
 
